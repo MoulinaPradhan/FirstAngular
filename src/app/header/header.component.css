@@ -1,3 +1,13 @@
-body{
-    background-color: black;
+button{
+    background: rgb(249,110,33);
+    background: linear-gradient(23deg, rgba(249,110,33,1) 40%, rgba(254,140,5,1) 68%);
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+    background: rgb(254,140,5);
+    background: linear-gradient(23deg, rgba(254,140,5,1) 30%, rgba(249,110,33,1) 50%);
 }
