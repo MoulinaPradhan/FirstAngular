@@ -11,3 +11,13 @@ button:hover{
     background: rgb(254,140,5);
     background: linear-gradient(23deg, rgba(254,140,5,1) 30%, rgba(249,110,33,1) 50%);
 }
+.logo{
+    background-color:transparent;
+    height: 40px;
+}
+.navbar-inverse{
+    background-color: #2F154C;
+}
+.fontSize{
+    font-size: 14px;
+}
