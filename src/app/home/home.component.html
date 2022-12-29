@@ -100,14 +100,16 @@
               <h5 class="card-title">{{ event.name }}</h5>
 
               <!-- box for information -->
-              <div class="d-flex flex-row flex-wrap">
+              <div class="d-flex flex-row flex-wrap info">
                 <div>Starts on <br>
                   <strong>{{ event.event_start_time
                     | date:'HH:mm dd-MM-yyyy'}}</strong>
                 </div>
                 <div>Entry Fee
-                  <br>
-                  Rs {{ event.fees }}
+                  <br >
+                 <b *ngIf="event.fees == 0">Free</b> 
+               
+                <b *ngIf="event.fees > 0"> Rs {{ event.fees }}</b> 
                 </div>
                 <div>Venue <br> <b> {{ event.venue }}</b>
                 </div>
@@ -129,7 +131,7 @@
 <!-- the images of registered candidates using getUsers -->
 
 
-          <button routerLink="/detail/{{event.id}}" class="btn border-0 register-btn text-white px-3 text-uppercase">Register now</button>
+          <button *ngIf=" event_sub_category =='Upcoming' " routerLink="/detail/{{event.id}}" class="btn border-0 register-btn text-white px-3 text-uppercase">Register now</button>
             </div>
 
           </div>
