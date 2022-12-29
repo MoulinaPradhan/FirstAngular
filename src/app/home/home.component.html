@@ -76,8 +76,17 @@
       </li>
       <li class="list-group-item">
         <nav class="navbar  navbar-light navbar-expand-lg">
-          <ul class="navbar-nav mr-auto d-flex justify-content-start w-100">
-            <li class="nav-item"> <a class="nav-link" (click)="getUpcoming()">Upcoming</a></li>
+          <ul class="navbar-nav mr-auto d-flex justify-content-start w-100 subcategory tab">
+           
+            <input type="radio" id="radioApple" (click)="getUpcoming()" value="apple" checked>
+            <label for="upcoming">Upcoming</label>
+        
+            <input type="radio" id="radioBanana" name="radioFruit" value="banana">
+            <label for="radioBanana">Banana</label>
+        
+            <input type="radio" id="radioOrange" name="radioFruit" value="orange">
+            <label for="radioOrange">Orange</label> 
+            <li class="nav-item"> <a type="radio" class="nav-link" (click)="getUpcoming()">Upcoming</a></li>
             <li class="nav-item"> <a class="nav-link" (click)="getArchive()">Archieved</a></li>
 
             <li class="nav-item"> <a class="nav-link" (click)="getAllTimeFavorites()">All Time Favorites</a></li>
