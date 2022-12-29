@@ -88,8 +88,8 @@
     </ul>
 
     <!-- Card for every event -->
-    <div class="d-flex flex-row flex-wrap justify-content-between">
-      <div class="col-lg-10 d-flex flex-row flex-wrap justify-content-around" *ngIf="eventList.data.events!.length > 0">
+    <div class="d-flex flex-row flex-wrap justify-content-start">
+      <div class="col-lg-10 d-flex flex-row flex-wrap justify-content-start rounded-0 box-radius" *ngIf="eventList.data.events!.length > 0">
         <!-- conditional render -->
 
         <div class="card col-lg-5 col-md-6 w-50" *ngFor="let event of eventList.data.events | paginate: { itemsPerPage: 4, currentPage: page }">
