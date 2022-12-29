@@ -62,10 +62,10 @@
 <li class="list-group-item">
     <nav class="navbar  navbar-light navbar-expand-lg">
     <ul class="navbar-nav mr-auto d-flex justify-content-start w-100">
-    <li class="nav-item"> <a class="nav-link" href="#">Upcoming</a></li>
-    <li class="nav-item"> <a class="nav-link" href="#">Archieved</a></li>
+    <li class="nav-item"> <a class="nav-link" (click)="getUpcoming()" >Upcoming</a></li>
+    <li class="nav-item"> <a class="nav-link" (click)="getArchive()">Archieved</a></li>
  
-    <li class="nav-item"> <a class="nav-link" href="#">All Time Favorites</a></li>
+    <li class="nav-item"> <a class="nav-link" (click)="getAllTimeFavorites()" >All Time Favorites</a></li>
  
     </ul>
 </nav>
@@ -82,8 +82,18 @@
     <div class="card-body">
       <h5 class="card-title">{{event.event_type}}</h5>
       <div class="card-body">
-        <h1 class="card-title">{{ event.name }}</h1>
+        <h5 class="card-title">{{ event.name }}</h5>
 
+        <!-- box for information -->
+        <div class="d-flex flex-row flex-wrap">
+<div>Starts on <br>
+  <strong>{{ event.event_start_time
+    | date:'HH:mm dd-MM-yyyy'}}</strong>
+</div>
+<div>hihsh</div>
+<div>hjkh</div>
+        </div>
+<hr>
         <p class="card-text">
           {{ event.short_desc | slice:0:115}}
         </p>          
