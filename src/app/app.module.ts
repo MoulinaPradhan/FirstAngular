@@ -9,6 +9,14 @@ import { FooterComponent } from './footer/footer.component';
 import { TagsComponent } from './tags/tags.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EventComponent } from './event/event.component';
+import { RouterModule,Routes } from '@angular/router';
+
+
+const routes: Routes=[
+  {
+    path : 'events/:event_category',
+     component: EventComponent}
+]
 
 @NgModule({
   declarations: [
@@ -22,7 +30,8 @@ import { EventComponent } from './event/event.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

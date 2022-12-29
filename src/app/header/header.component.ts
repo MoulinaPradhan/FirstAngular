@@ -1,4 +1,5 @@
 import { Component,HostListener, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 @HostListener('window:scroll', ['$event'])
 
 
@@ -9,8 +10,10 @@ import { Component,HostListener, OnInit } from '@angular/core';
 })
 
 export class HeaderComponent implements OnInit {
+
   ngOnInit(): void {
     window.addEventListener('scroll', this.onWindowScroll, true)
+   
   }
   onWindowScroll() {
     let element = document.querySelector('nav') as HTMLElement;

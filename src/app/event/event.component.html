@@ -1,10 +1,66 @@
-<div class="col-lg-5 col-md-6 mb-4 mb-md-0">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<div>
+  <a
+  a [routerLink]="['/events']"
+                    [queryParams]="{event_catagory:'CODING_EVENTS'}">
+                    Coding Events
+                  </a>
+  <div *ngIf="eventList.data.events!.length > 0">
+    <div class="row">
+      <div *ngFor="let event of eventList.data.events">
+        <div class="col-sm-6 mb-4">
+          <div class="card" style="width: 32rem">
+            <div class="card-header">
+              <b>{{ event.event_type }}</b>
+            </div>
+            <img
+              class="card-img-top"
+              style="height: 13rem"
+              src="{{ event.cover_picture }}"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h1 class="card-title">{{ event.name }}</h1>
+              
+              <!-- <div class="row ml-1">
+                <div *ngFor="let tagging of taggings">
+                  <h6 *ngIf="event!.id == tagging.event_id" class="badge badge-secondary mr-2">{{ tags[tagging.tag_id] }}</h6>
+                </div>
+              </div> -->
+
+              <p class="card-text">
+                {{ event.short_desc | slice:0:115}}.........
+              </p>          
+              <div class="row mb-4"> 
+                <div class="col-sm-8">
+                  <p class="card-text">
+                    <b>Venue : </b> {{ event.venue }}
+                  </p>
+                </div>
+                <div class="col-sm-4">
+                  <p class="card-text">
+                    <b>Fees : </b> {{ event.fees }} Rs
+                  </p>
+                </div>
+              </div>        
+              <p class="card-text">
+                <b>Start time : </b>{{ event.event_start_time
+                    | date:'dd-MM-yyyy HH:mm'}}
+              </p>
+              <p class="card-text">
+                <b>End time : </b>{{ event.event_end_time
+                    | date:'dd-MM-yyyy HH:mm'}}
+              </p>
+              <a routerLink="/detail/{{event.id}}" class="btn btn-warning"
+                >View</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div *ngIf="!(eventList.data.events!.length > 0)">
+    <h1 class="text-secondary m-5">No Events Found</h1>
+  </div>
+    </div>
+
