@@ -1,3 +1,5 @@
+<div>
+
 <div class="margin-align content-space">
   <h1 class="text-white">EVENTS & NEWS</h1>
   <h3 class="text-white">Learn,Compete & Grow</h3>
@@ -86,12 +88,12 @@
     </ul>
 
     <!-- Card for every event -->
-    <div class="d-flex flex-row flex-wrap">
-      <div class="col-lg-9 d-flex flex-row flex-wrap" *ngIf="eventList.data.events!.length > 0">
+    <div class="d-flex flex-row flex-wrap justify-content-between">
+      <div class="col-lg-10 d-flex flex-row flex-wrap justify-content-around" *ngIf="eventList.data.events!.length > 0">
         <!-- conditional render -->
 
-        <div class="card col-lg-6 col-md-6 mb-4 mb-md-0" *ngFor="let event of eventList.data.events">
-          <img class="card-img-top" src="{{ event.cover_picture }}" alt="{{ event.cover_picture }}">
+        <div class="card col-lg-5 col-md-6" *ngFor="let event of eventList.data.events | paginate: { itemsPerPage: 4, currentPage: page }">
+          <img class="card-img-top" height="200px" src="{{ event.cover_picture }}" alt="{{ event.cover_picture }}">
           <div class="card-body">
             <h5 class="card-title">{{event.event_type}}</h5>
             <div class="card-body">
@@ -144,7 +146,17 @@
     </div>
     
   </div>
+
+
+  <!-- Pagination -->
+
+<div class ="text-center">
+  <pagination-controls class="pagination" (pageChange)="page = $event"></pagination-controls>
+<!-- <p>{{eventList.data.page_count}}</p> -->
+ </div>
  
+  <!--End Pagination -->
+</div>
 
 
  

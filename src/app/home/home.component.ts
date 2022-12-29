@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation,OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, TitleStrategy } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   public eventList: any;
+  page: number =1;
   event_category="ALL_EVENTS";
   event_sub_category="Upcoming";
  
@@ -85,6 +86,8 @@ export class HomeComponent implements OnInit {
      this.http.get(this.url).subscribe((data) =>{
        console.log(data);
        this.eventList=data;
+  
+
      });
    } 
  }

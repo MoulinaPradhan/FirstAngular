@@ -10,7 +10,7 @@ import { TagsComponent } from './tags/tags.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EventComponent } from './event/event.component';
 import { RouterModule,Routes } from '@angular/router';
-
+import { NgxPaginationModule } from 'ngx-pagination'; 
 
 const routes: Routes=[
   {
@@ -31,6 +31,7 @@ const routes: Routes=[
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxPaginationModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

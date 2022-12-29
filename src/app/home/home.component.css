@@ -12,3 +12,22 @@ background: linear-gradient(90deg, rgba(248,121,37,1) 0%, rgba(239,153,23,1) 100
     
     margin: 2px;
 }
+
+  .pagination ::ng-deep .ngx-pagination .current {
+    background: orange;
+    text-align: center;
+    align-items: center;
+}
+.pagination ::ng-deep .ngx-pagination a {
+    color: white;
+    }
+    
+    /* sets font color for number color when hovering */
+    .pagination ::ng-deep .ngx-pagination a:hover {
+    color: orangered;
+    }
+    
+    /* sets font color for disabled previous or next words */
+    .pagination ::ng-deep .ngx-pagination .disabled {
+    color: black !important;
+    }
