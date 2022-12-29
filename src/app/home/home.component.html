@@ -1,136 +1,142 @@
 <div class="margin-align content-space">
-<h1 class="text-white">EVENTS & NEWS</h1>
-<h3 class="text-white">Learn,Compete & Grow</h3>
+  <h1 class="text-white">EVENTS & NEWS</h1>
+  <h3 class="text-white">Learn,Compete & Grow</h3>
 
-<div class="container-fluid card mt-5">
+  <div class="container-fluid card mt-5">
     <!-- Container header -->
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
+      <li class="list-group-item">
         <nav class="navbar  navbar-light navbar-expand-lg">
-           <ul class="navbar-nav mr-auto nav-fill w-100">
-                <li class="nav-item active">
-                  <a class="nav-link" (click)="solve_allevent()">
-                  
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
-                        <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                        <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                      </svg>
-                      All Events
-                </a>
+          <ul class="navbar-nav mr-auto nav-fill w-100">
+            <li class="nav-item active">
+              <a class="nav-link" (click)="solve_allevent()">
 
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" (click)="solve_code()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2Z"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783.059-.187.09-.386.09-.593V4a2 2 0 0 0-2-2H2Z"/>
-                      </svg>
-                    Webinars
-                </a>
-                </li>      
-                <li class="nav-item active">
-                    <a
-                     class="nav-link" (click)="solve_boot()" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                            <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
-                          </svg>
-                        Coding Events
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  (click)="solve_work()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-end-btn" viewBox="0 0 16 16">
-                            <path d="M6.79 5.093 9.5 7.028V5.5a.5.5 0 0 1 1 0v5a.5.5 0 0 1-1 0V8.972l-2.71 1.935A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .79-.407z"/>
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                          </svg>Bootcamp Events</a>
-                  </li>    
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
-                            <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                            <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"/>
-                          </svg>
-                                Workshop</a>
-                  </li>   
-                
-              </ul>
-              
-         
-          </nav>
-        </li>
-<li class="list-group-item">
-    <nav class="navbar  navbar-light navbar-expand-lg">
-    <ul class="navbar-nav mr-auto d-flex justify-content-start w-100">
-    <li class="nav-item"> <a class="nav-link" (click)="getUpcoming()" >Upcoming</a></li>
-    <li class="nav-item"> <a class="nav-link" (click)="getArchive()">Archieved</a></li>
- 
-    <li class="nav-item"> <a class="nav-link" (click)="getAllTimeFavorites()" >All Time Favorites</a></li>
- 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                  <path
+                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+                All Events
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="solve_code()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-person-video3" viewBox="0 0 16 16">
+                  <path
+                    d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2Z" />
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783.059-.187.09-.386.09-.593V4a2 2 0 0 0-2-2H2Z" />
+                </svg>
+                Webinars
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" (click)="solve_boot()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-code-square" viewBox="0 0 16 16">
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                  <path
+                    d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z" />
+                </svg>
+                Coding Events
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="solve_work()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-skip-end-btn" viewBox="0 0 16 16">
+                  <path
+                    d="M6.79 5.093 9.5 7.028V5.5a.5.5 0 0 1 1 0v5a.5.5 0 0 1-1 0V8.972l-2.71 1.935A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .79-.407z" />
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                </svg>Bootcamp Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-person-workspace" viewBox="0 0 16 16">
+                  <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                  <path
+                    d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z" />
+                </svg>
+                Workshop</a>
+            </li>
+
+          </ul>
+
+
+        </nav>
+      </li>
+      <li class="list-group-item">
+        <nav class="navbar  navbar-light navbar-expand-lg">
+          <ul class="navbar-nav mr-auto d-flex justify-content-start w-100">
+            <li class="nav-item"> <a class="nav-link" (click)="getUpcoming()">Upcoming</a></li>
+            <li class="nav-item"> <a class="nav-link" (click)="getArchive()">Archieved</a></li>
+
+            <li class="nav-item"> <a class="nav-link" (click)="getAllTimeFavorites()">All Time Favorites</a></li>
+
+          </ul>
+        </nav>
+      </li>
     </ul>
-</nav>
-        </li>
-</ul>
 
- <!-- Card for every event -->
- <div class="d-flex flex-row flex-wrap">
-  <div class="col-lg-9 d-flex flex-row flex-wrap" *ngIf="eventList.data.events!.length > 0">
-    <!-- conditional render -->
+    <!-- Card for every event -->
+    <div class="d-flex flex-row flex-wrap">
+      <div class="col-lg-9 d-flex flex-row flex-wrap" *ngIf="eventList.data.events!.length > 0">
+        <!-- conditional render -->
 
-  <div class="card col-lg-6 col-md-6 mb-4 mb-md-0"  *ngFor="let event of eventList.data.events">
-    <img class="card-img-top"  src="{{ event.cover_picture }}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{event.event_type}}</h5>
-      <div class="card-body">
-        <h5 class="card-title">{{ event.name }}</h5>
+        <div class="card col-lg-6 col-md-6 mb-4 mb-md-0" *ngFor="let event of eventList.data.events">
+          <img class="card-img-top" src="{{ event.cover_picture }}" alt="{{ event.cover_picture }}">
+          <div class="card-body">
+            <h5 class="card-title">{{event.event_type}}</h5>
+            <div class="card-body">
+              <h5 class="card-title">{{ event.name }}</h5>
 
-        <!-- box for information -->
-        <div class="d-flex flex-row flex-wrap">
-<div>Starts on <br>
-  <strong>{{ event.event_start_time
-    | date:'HH:mm dd-MM-yyyy'}}</strong>
-</div>
-<div>hihsh</div>
-<div>hjkh</div>
+              <!-- box for information -->
+              <div class="d-flex flex-row flex-wrap">
+                <div>Starts on <br>
+                  <strong>{{ event.event_start_time
+                    | date:'HH:mm dd-MM-yyyy'}}</strong>
+                </div>
+                <div>Entry Fee
+                  <br>
+                  Rs {{ event.fees }}
+                </div>
+                <div>Venue <br> <b> {{ event.venue }}</b>
+                </div>
+              </div>
+              <hr>
+              <p class="card-text">
+                {{ event.short_desc | slice:0:115}}
+              </p>
+
+
+            </div>
+            <div class="d-flex justify-content-end">
+
+              <button routerLink="/detail/{{event.id}}" class="btn border-0 register-btn text-white px-3 text-uppercase">Register now</button>
+            </div>
+
+          </div>
         </div>
-<hr>
-        <p class="card-text">
-          {{ event.short_desc | slice:0:115}}
-        </p>          
-        <div class="row mb-4"> 
-          <div class="col-sm-8">
-            <p class="card-text">
-              <b>Venue : </b> {{ event.venue }}
-            </p>
-          </div>
-          <div class="col-sm-4">
-            <p class="card-text">
-              <b>Fees : </b> {{ event.fees }} Rs
-            </p>
-          </div>
-        </div>        
-        <p class="card-text">
-          <b>Start time : </b>{{ event.event_start_time
-              | date:'dd-MM-yyyy HH:mm'}}
-        </p>
-        <p class="card-text">
-          <b>End time : </b>{{ event.event_end_time
-              | date:'dd-MM-yyyy HH:mm'}}
-        </p>
-        <a routerLink="/detail/{{event.id}}" class="btn btn-warning"
-          >View</a
-        >
+      </div>
+      <div *ngIf="!(eventList.data.events!.length > 0)" class="col-lg-9 col-md-6 mb-4 mb-md-0 text-center">
+        <h1 class="text-secondary m-5">No Events Found</h1>
+      </div>
+      <div class="col-lg-2">
+        <h4>Tags</h4>
+        <app-tags></app-tags>
       </div>
     </div>
-  </div>
-  </div>
-  <div *ngIf="!(eventList.data.events!.length > 0)" class="col-lg-8 col-md-6 mb-4 mb-md-0 text-center">
-    <h1 class="text-secondary m-5">No Events Found</h1>
+    </div>
+    
   </div>
  
-  <div class ="col-lg-3">
-    <h4>Tags</h4>
-<app-tags></app-tags>
-  </div>
- </div>
+
+
  

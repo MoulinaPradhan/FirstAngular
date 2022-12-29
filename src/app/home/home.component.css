@@ -1,3 +1,8 @@
 .content-space{
     margin-top: 10%;
 }
+.register-btn{
+    font-size: 14px;
+    background: rgb(248,121,37);
+background: linear-gradient(90deg, rgba(248,121,37,1) 0%, rgba(239,153,23,1) 100%);
+}
