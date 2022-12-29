@@ -114,12 +114,20 @@
               <p class="card-text">
                 {{ event.short_desc | slice:0:115}}
               </p>
-
+              <!-- card-tags -->
+              <div class ="d-flex flex-row flex-wrap">
+                <div class="card-tag px-3 py-1" *ngFor="let card_tag of event.card_tags">{{card_tag}}</div>
+              </div>
+              
 
             </div>
+            <hr>
+          
             <div class="d-flex justify-content-end">
+<!-- the images of registered candidates using getUsers -->
 
-              <button routerLink="/detail/{{event.id}}" class="btn border-0 register-btn text-white px-3 text-uppercase">Register now</button>
+
+          <button routerLink="/detail/{{event.id}}" class="btn border-0 register-btn text-white px-3 text-uppercase">Register now</button>
             </div>
 
           </div>
