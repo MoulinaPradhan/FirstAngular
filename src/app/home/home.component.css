@@ -14,7 +14,7 @@ background: linear-gradient(90deg, rgba(248,121,37,1) 0%, rgba(239,153,23,1) 100
 }
 
   .pagination ::ng-deep .ngx-pagination .current {
-    background: orange;
+    background:orangered;
     text-align: center;
     align-items: center;
 }
@@ -29,5 +29,7 @@ background: linear-gradient(90deg, rgba(248,121,37,1) 0%, rgba(239,153,23,1) 100
     
     /* sets font color for disabled previous or next words */
     .pagination ::ng-deep .ngx-pagination .disabled {
-    color: black !important;
+    color: wheat !important;
+    opacity: 0.5;
+
     }

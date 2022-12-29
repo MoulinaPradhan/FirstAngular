@@ -92,7 +92,7 @@
       <div class="col-lg-10 d-flex flex-row flex-wrap justify-content-around" *ngIf="eventList.data.events!.length > 0">
         <!-- conditional render -->
 
-        <div class="card col-lg-5 col-md-6" *ngFor="let event of eventList.data.events | paginate: { itemsPerPage: 4, currentPage: page }">
+        <div class="card col-lg-5 col-md-6 w-50" *ngFor="let event of eventList.data.events | paginate: { itemsPerPage: 4, currentPage: page }">
           <img class="card-img-top" height="200px" src="{{ event.cover_picture }}" alt="{{ event.cover_picture }}">
           <div class="card-body">
             <h5 class="card-title">{{event.event_type}}</h5>
@@ -139,21 +139,21 @@
         <h1 class="text-secondary m-5">No Events Found</h1>
       </div>
       <div class="col-lg-2">
-        <h4>Tags</h4>
+        <h4 class="text-secondary text-uppercase">Tags</h4>
         <app-tags></app-tags>
       </div>
     </div>
     </div>
-    
+   
   </div>
 
 
   <!-- Pagination -->
 
-<div class ="text-center">
-  <pagination-controls class="pagination" (pageChange)="page = $event"></pagination-controls>
-<!-- <p>{{eventList.data.page_count}}</p> -->
- </div>
+  <div class ="text-center d-flex justify-content-center">
+    <pagination-controls class="pagination" (pageChange)="page = $event"></pagination-controls>
+  <!-- <p>{{eventList.data.page_count}}</p> -->
+   </div>
  
   <!--End Pagination -->
 </div>
