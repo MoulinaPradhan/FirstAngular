@@ -1,7 +1,0 @@
-body { 
-    background: rgb(3,45,107);
-    background: linear-gradient(90deg, rgba(3,45,107,1) 30%, rgba(3,45,107,1) 36%, rgba(94,94,103,1) 53%, rgba(84,68,126,1) 100%)!important;
- }
- .margin-align{
-    margin: -1px 140px;
-}

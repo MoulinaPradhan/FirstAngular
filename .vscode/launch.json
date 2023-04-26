@@ -3,6 +3,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Tgg",
+      "request": "launch",
+      "mainClass": "Tgg",
+      "projectName": "FirstAngular_eae3a771"
+    },
+    {
       "name": "ng serve",
       "type": "pwa-chrome",
       "request": "launch",
