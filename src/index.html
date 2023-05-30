@@ -1,36 +1,45 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-	<title>AngularJS ngClass conditional</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+	
+	<script language="javascript">
+		angular
+			.module('layout', ['ngMaterial'])
+			.controller('layoutController', layoutController);
+
+		function layoutController($scope) {
+		}	  
 	</script>
-	<style>
-		#faq-1{
-			margin-top: 550px;
-		}
-		#faq-2{
-			margin-top: 880px;
-		}
-	</style>
 </head>
 
-<body ng-app="" style="text-align:center">
-	<h1 style="color:green;">
+<body ng-app="layout" class="text-center">
+	<h1 class="text-success">
 		GeeksforGeeks
 	</h1>
+	<h3>What is Angular Material Layout Directive?</h3>
 
-	<h3>AngularJS ngClass conditional</h3>
-
-	<div>
-		<a href="#faq-1">Question 1</a>
-<a href="#faq-2">Question 2</a>
-<a href="#faq-3">Question 3</a>
-
-<h3 id="faq-1">Question 1</h3>
-<h3 id="faq-2">Question 2</h3>
-<h3 id="fa1-3">Question 3</h3>
-
+	<h6>Layout 1</h6>
+	<div layout="row" layout-xs = "column">
+		<div flex="60" style="background-color: red;">
+			1
+		</div>
+		<div flex style="background-color: yellow;">
+			2
+		</div>
+	</div>
+	<h6>Layout 2</h6>
+	<div layout="column" layout-xs="row">
+		<div flex="40" style="background-color: red;">
+			1
+		</div>
+		<div flex style="background-color: yellow;">
+			2
+		</div>
 	</div>
 </body>
 

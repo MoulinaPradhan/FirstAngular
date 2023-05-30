@@ -1,9 +1,46 @@
-<div> 
-<h1>huuu</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    #div1,
+    #div2 {
+      width: 400px;
+      height: 50px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+    }
+
+    #div2:hover {
+      cursor: pointer;
+      z-index: -2;
+    }
+
+    #div2:focus {
+      border: 10px solid green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text-center">
+    <h1 class="text-success">
+      GeeksforGeeks
+    </h1>
+    <h3>Bootstrap 5 Approach z-index scales Component elements</h3>
+    <div layout="row" layout-xs="column">
+      <div flex>
+        I'm above on mobile, and to the left on larger devices.
+      </div>
+      <div flex>
+        I'm below on mobile, and to the right on larger devices.
+      </div>
+    </div>
   </div>
+</body>
 
- 
-
-
-
-<router-outlet></router-outlet>
+</html>
